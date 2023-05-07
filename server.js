@@ -1,5 +1,7 @@
 const config = require('dotenv').config();
 
+const {chainInterfaceProxy} = require('./proxy');
+
 (async () => {
   // Start the proxy service
   const {server} = chainInterfaceProxy({
